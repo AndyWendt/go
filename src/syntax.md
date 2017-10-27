@@ -13,7 +13,22 @@
 
 ### Arrays
 
-Arrays have a defined length.  
+Arrays have a defined length.  Elements can be defined at declaration or after. 
+
+Declare array and add elements after:
+
+```go
+var myArray [2]string
+    myArray[0] = "foo"
+    myArray[1] = "bar"
+```
+
+Declare array and add elements at time of declaration: 
+
+```go
+myArray  := [2]string{"foo", "bar"}
+```
+
 
 ### Slices 
 
