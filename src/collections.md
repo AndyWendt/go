@@ -82,5 +82,4 @@ func main()  {
 	person["name"] = "Hugh Smith"
 	person["occupation"] = "Insurance Salesman"
 }
-
 ```
