@@ -52,3 +52,35 @@ for _, element := range someSlice {
     // element is the element from someSlice for where we are
 }
 ```
+
+
+## Maps
+
+Maps are the associative array of the Go world though they are typed. 
+
+### Map Literals
+
+Maps can be created and assigned in one operation using a literal
+
+```go
+person := map[string]string {
+	"name": "Hugh Smith",
+	"occupation": "Insurance Salesman"
+}
+```
+
+
+### Making a Map
+
+You can also make a map and add elements to it after creation. 
+
+```go
+var m map[string]Vertex
+
+func main()  {
+	person = make(map[string]string) 
+	person["name"] = "Hugh Smith"
+	person["occupation"] = "Insurance Salesman"
+}
+
+```
