@@ -98,7 +98,7 @@ mySlice = append(mySlice, person)
 ```
 
 
-### Convert map to slice
+### Convert maps to slices
 
 ```go
 
