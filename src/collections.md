@@ -96,3 +96,34 @@ person := map[string]string {
 
 mySlice = append(mySlice, person)
 ```
+
+
+### Convert map to slice
+
+```go
+
+    // create the maps
+    devs := make([]map[string]string, 0)
+    
+    person1 := map[string]string {
+        "first_name": "Fred",
+        "last_name": "Brooks",
+    }
+    
+    person2 := map[string]string {
+        "first_name": "Steve",
+        "last_name": "McConnell",
+    }
+    
+    devs = append(devs, person1)
+    devs = append(devs, person2)
+    
+    
+    // initialize the slice of slices
+	data := make([][]string, 0)
+	data = append(data, []string{"First Name", "Last Name"})
+	
+	for _, dev := range devs {
+	    data = append(data, []string{dev["first_name"], dev["last_name"]})
+	}
+```
