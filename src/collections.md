@@ -83,3 +83,16 @@ func main()  {
 	person["occupation"] = "Insurance Salesman"
 }
 ```
+
+### Adding a map to a slice
+
+```go
+mySlice := make([]map[string]string, 0)
+
+person := map[string]string {
+	"name": "Hugh Smith",
+	"occupation": "Insurance Salesman"
+}
+
+mySlice = append(mySlice, person)
+```
